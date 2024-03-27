@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./style/style.css"/>
+</head>
+
+<body>
+    <div class="main vh-100 w-100 d-flex justify-content-center align-items-center">
+        <div class="innerMain w-100 h-100 overflow-hidden rounded-5 position-relative">
+            <div class=" h-100">
+                <input type="checkbox" class="d-none" id="checkbox"/>
+                <div class="formBox  h-100 d-flex position-relative">
+                    <div class=" h-100 form px-5 py-4 position-relative signUp">
+                        <div class="text-white fw-bold fs-3 mb-2">Registration</div>
+                        <form action="#">
+                            <div class="mb-2">
+                                <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                                <input type="text" placeholder="Enter your Full Name" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                              </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" placeholder="Enter your email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="my-2 d-flex">
+                            <select class="form-select w-50 me-3" aria-label="Default select example" required>
+                                <option selected>Select Country</option>
+                                <option value="1">United Kingdom</option>
+                                <option value="2">India</option>
+                                <option value="3">China</option>
+                              </select>
+                              <div class="d-flex w-50">
+                                <label class="form-check-label me-1 d-flex align-items-center">Gender:</label>
+                                <div class="form-check form-check-inline d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="radio" name="inlineRadioOptions" required id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                  </div>
+                                  <div class="form-check form-check-inline d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="radio" name="inlineRadioOptions" required id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="mb-2 position-relative">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1" required>
+                              <p class="guide position-absolute end-0 text-white mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Password Guildlines</p>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" class="form-control" id="exampleInputPassword1" required>
+                              </div>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                          </form>
+                    </div>
+                    <div class=" h-100 position-relative imgBox d-flex flex-column justify-content-around align-items-center">
+                      <div class="logo w-100">
+                        <img class="w-100" src="./image/formLogo.png"/>
+                      </div>
+                      <label for="checkbox" class="logSign position-relative fw-bold overflow-hidden">
+                        <div class="arrow position-absolute top-50 translate-middle"><img class="w-100" src="./image/arrow.png"/></div>
+                      </label>
+                    </div>
+                    <div class=" signIn h-100 form px-5 py-4 d-flex flex-column justify-content-center">
+                        <div class="text-white fw-bold fs-3 mb-2">Login</div>
+                        <form action="#">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" placeholder="Enter your email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-2">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Password Guidlines</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>At least 12 characters long but 14 or more is better.</li>
+                  <li>A combination of uppercase letters, lowercase letters, numbers, and symbols.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <label for="checkbox"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
